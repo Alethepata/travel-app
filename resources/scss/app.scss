@@ -1,0 +1,244 @@
+@import '~bootstrap/scss/bootstrap';
+
+body{
+    height: 100vh;
+    overflow: hidden;
+    background-color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+.header-content{
+    height: 65px;
+    width: 100%;
+    header{
+        height: 100%;
+    }
+}
+
+#app{
+    main{
+        height: calc(100% - 65px);
+        overflow-y: auto;
+        .jumbotron h1, .container_custom h1, .container_custom h3, li i{
+            color: rgba(75, 113, 129, 0.622);
+
+        }
+
+    }
+}
+
+.card{
+    border: none;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.324);
+    overflow: hidden ;
+}
+
+.main-wrapper{
+    height: calc(100% - 65px);
+    .col:last-child{
+        padding: 20px;
+        height: 100%;
+        overflow-y: auto;
+    }
+}
+
+.btn-delete{
+    border: none;
+    background: none;
+}
+
+.btn{
+    background-color: rgba(121, 151, 164, 0.361);
+    &:hover{
+        background-color: rgba(75, 113, 129, 0.622);
+        color: white;
+
+    }
+}
+
+
+.col_custom{
+    width: 250px;
+    .days{
+        background-color: rgba(75, 113, 129, 0.622);
+        height: 70px;
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    .toast_wrapper{
+        background-color: rgba(121, 151, 164, 0.361);
+        height: calc(100% - 90px);
+        overflow-y: auto;
+        .toast_custom{
+            background-color: white;
+            padding: 10px;
+        }
+
+    }
+}
+
+.add_note{
+    margin: 10px 0 15px 0;
+    overflow-y: auto;
+
+    color:#000;
+    background:rgb(255, 255, 255);
+    height:10em;
+    width:10em;
+    padding:1em;
+
+    border: 2px dashed rgba(0, 0, 0, 0.324);
+
+    -moz-transition:-moz-transform .15s linear;
+    -o-transition:-o-transform .15s linear;
+    -webkit-transition:-webkit-transform .15s linear;
+    -webkit-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+    -moz-transform:rotate(-6deg);
+
+}
+
+.note{
+    margin: 10px 0 15px 0;
+
+    color:#000;
+    background:#ffc;
+    height:10em;
+    width:10em;
+    padding:1em;
+    -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+    -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    -moz-transition:-moz-transform .15s linear;
+    -o-transition:-o-transform .15s linear;
+    -webkit-transition:-webkit-transform .15s linear;
+    -webkit-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+    -moz-transform:rotate(-6deg);
+
+    &:hover{
+        box-shadow:10px 10px 7px rgba(0,0,0,.7);
+        -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+        -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+        -webkit-transform: scale(1.25);
+        -moz-transform: scale(1.25);
+        -o-transform: scale(1.25);
+        position:relative;
+        z-index:5;
+    }
+}
+
+.box_description{
+    width: 70%;
+    margin: 0 auto;
+    height: 250px ;
+    text-align: center;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.324);
+}
+
+.carousel-inner{
+    width: 600px;
+    .carousel-item {
+        img{
+            height: 400px;
+            object-fit: cover;
+        }
+
+    }
+}
+
+
+.image_index{
+    width: 350px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .button{
+        display: none;
+        top: 0;
+        right: 0;
+        background-color: #0000008d;
+        width: 100%;
+        height: 100%;
+        button{
+            color: rgb(252, 252, 226);
+        }
+    }
+    &:hover .button{
+        display: block;
+    }
+}
+
+.navbar{
+    background-color: white;
+    .container{
+        .logo{
+            height: 65px;
+            img{
+                height: 100%;
+            }
+        }
+    }
+}
+
+.container-form{
+    width: 30%;
+    height: 450px;
+    margin: 0 auto;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.324);
+    padding: 50px;
+    overflow: hidden;
+    .form{
+        height: 100%;
+        overflow-y: auto;
+
+    }
+}
+
+.background-dashboard{
+    background-image: url('image/assets/airplane-dashboard.bmp');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    .card-dashboard{
+        width: 250px;
+        box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.324);
+    }
+}
+
+.card-header-custom{
+    padding: 20px;
+    background-color: rgba(121, 151, 164, 0.361);
+    color: white;
+}
+
+.container_custom{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.curiosity_card{
+    width: 250px;
+    height: 200px;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.324);
+    background-color: #38218964;
+    color: white;
+}
+
+
+
+
